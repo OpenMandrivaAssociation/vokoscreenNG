@@ -34,7 +34,8 @@ cd ..
 %make_build -C src/
 
 %install
-%make_install -C
+mkdir -p %{buildroot}%{_bindir}
+%make_install INSTALL_ROOT=%{buildroot}
 
 %files
 %doc COPYING
