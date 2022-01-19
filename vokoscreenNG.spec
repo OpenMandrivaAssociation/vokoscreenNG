@@ -32,8 +32,9 @@ cd src/
 %qmake_qt5 PREFIX=/usr
 cd ..
 %make_build -C src/
-
+cd ..
 %install
+cd src/
 mkdir -p %{buildroot}%{_bindir}
 %make_install INSTALL_ROOT=%{buildroot}
 
