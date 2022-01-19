@@ -41,6 +41,6 @@ mkdir -p %{buildroot}%{_bindir}
 %files
 %doc COPYING
 %doc README.md ToDo.txt INSTALL
-%{_bindir}/%{name}
-%{_datadir}/applications/*.desktop
-%{_datadir}/pixmaps/*.png
+#{_bindir}/%{name}
+#{_datadir}/applications/*.desktop
+#{_datadir}/pixmaps/*.png
