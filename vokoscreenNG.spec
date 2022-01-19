@@ -25,7 +25,7 @@ Other tools such as magnifying glass, countdown, timer and systray support will 
 
 %build
 cd src/
-%qmake_qt5 ..
+%qmake_qt5 PREFIX=/usr
 cd ..
 %make_build -C src/
 
