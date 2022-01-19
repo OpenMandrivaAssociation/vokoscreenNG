@@ -10,6 +10,7 @@ Source0:        https://github.com/vkohaupt/vokoscreenNG/archive/%{version}/%{na
 BuildRequires:  cmake
 BuildRequires:  intltool
 BuildRequires:  qmake5
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  cmake(Qt5LinguistTools)
 BuildRequires:  cmake(Qt5Multimedia)
 BuildRequires:  cmake(Qt5X11Extras)
