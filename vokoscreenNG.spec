@@ -14,6 +14,7 @@ BuildRequires:  cmake(Qt5LinguistTools)
 BuildRequires:  cmake(Qt5Multimedia)
 BuildRequires:  cmake(Qt5X11Extras)
 BuildRequires:  pkgconfig(gstreamer-1.0)
+BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(x11)
 
 %description
