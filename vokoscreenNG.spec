@@ -37,8 +37,13 @@ cd ..
 cd ..
 %install
 cd src/
-mkdir -p %{buildroot}%{_bindir}
 %make_install INSTALL_ROOT=%{buildroot}
+mkdir -p %{buildroot}/usr/bin/
+cp src/%{name} %{buildroot}/usr/bin/
+mkdir -p %{buildroot}/usr/share/applications/
+cp src/applications/%{name}.desktop %{buildroot}/usr/share/applications/
+mkdir -p %{buildroot}/usr/share/pixmaps/
+cp src/applications/%{name}.png %{buildroot}/usr/share/pixmaps/
 
 %files
 %doc COPYING
