@@ -36,8 +36,8 @@ cd ..
 %make_build -C src/
 cd ..
 %install
-cd src/
-%make_install INSTALL_ROOT=%{buildroot}
+#cd src/
+##%make_install INSTALL_ROOT=%{buildroot}
 mkdir -p %{buildroot}/usr/bin/
 cp src/%{name} %{buildroot}/usr/bin/
 mkdir -p %{buildroot}/usr/share/applications/
