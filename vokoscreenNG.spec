@@ -67,7 +67,7 @@ cp src/applications/%{name}.png %{buildroot}/usr/share/pixmaps/
 
 %files
 %doc COPYING
-%doc README.md ToDo.txt INSTALL
+#doc README.md ToDo.txt INSTALL
 %{_bindir}/%{name}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
