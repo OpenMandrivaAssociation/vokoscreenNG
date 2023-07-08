@@ -15,7 +15,7 @@ BuildRequires:  qmake-qt6
 BuildRequires:  qt6-qtbase-tools
 BuildRequires:  cmake(Qt6LinguistTools)
 BuildRequires:  cmake(Qt6Multimedia)
-BuildRequires:  cmake(Qt6X11Extras)
+#BuildRequires:  cmake(Qt6X11Extras)
 BuildRequires:  cmake(Qt6Core)
 BuildRequires:  cmake(Qt6DBus)
 BuildRequires:  cmake(Qt6Gui)
