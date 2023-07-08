@@ -50,7 +50,7 @@ Other tools such as magnifying glass, countdown, timer and systray support will 
 
 %build
 cd src/
-%qmake PREFIX=/usr
+%qmake6 PREFIX=/usr
 cd ..
 %make_build -C src/
 cd ..
