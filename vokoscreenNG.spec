@@ -1,7 +1,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:           vokoscreenNG
-Version:        3.6.0
+Version:        3.7.0
 Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
@@ -37,6 +37,8 @@ Requires:       gstreamer1.0-plugins-good
 Requires:       gstreamer1.0-plugins-bad
 # Required for x264 and mp3lame
 Requires:       gstreamer1.0-plugins-ugly
+# Requires for Player x264
+Requires:       gstreamer1.0-libav
 
 Provides:       vokoscreenng = %{version}
 
