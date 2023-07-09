@@ -37,6 +37,8 @@ Requires:       gstreamer1.0-plugins-good
 Requires:       gstreamer1.0-plugins-bad
 # Required for x264 and mp3lame
 Requires:       gstreamer1.0-plugins-ugly
+# Requires for Player x264
+Requires:       gstreamer1.0-libav
 
 Provides:       vokoscreenng = %{version}
 
