@@ -2,7 +2,7 @@
 
 Name:           vokoscreenNG
 Version:        3.7.0
-Release:        1
+Release:        2
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
@@ -11,18 +11,18 @@ Source0:        https://github.com/vkohaupt/vokoscreenNG/archive/%{version}/%{na
 
 BuildRequires:  cmake
 BuildRequires:  intltool
-BuildRequires:  qmake5
-BuildRequires:  qt5-qtbase-devel
-BuildRequires:  cmake(Qt5LinguistTools)
-BuildRequires:  cmake(Qt5Multimedia)
-BuildRequires:  cmake(Qt5X11Extras)
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5DBus)
-BuildRequires:  pkgconfig(Qt5Gui)
-BuildRequires:  pkgconfig(Qt5Multimedia)
-BuildRequires:  pkgconfig(Qt5Network)
-BuildRequires:  pkgconfig(Qt5Test)
-BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  qmake-qt6
+BuildRequires:  qt6-qtbase-tools
+BuildRequires:  cmake(Qt6LinguistTools)
+BuildRequires:  cmake(Qt6Multimedia)
+#BuildRequires:  cmake(Qt6X11Extras)
+BuildRequires:  cmake(Qt6Core)
+BuildRequires:  cmake(Qt6DBus)
+BuildRequires:  cmake(Qt6Gui)
+BuildRequires:  cmake(Qt6Multimedia)
+BuildRequires:  cmake(Qt6Network)
+BuildRequires:  cmake(Qt6Test)
+BuildRequires:  cmake(Qt6Widgets)
 BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gstreamer-video-1.0)
 BuildRequires:  pkgconfig(libpulse)
@@ -52,7 +52,7 @@ Other tools such as magnifying glass, countdown, timer and systray support will 
 
 %build
 cd src/
-%qmake_qt5 PREFIX=/usr
+qmake-qt6 PREFIX=/usr
 cd ..
 %make_build -C src/
 cd ..
