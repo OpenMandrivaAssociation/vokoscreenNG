@@ -2,7 +2,7 @@
 
 Name:           vokoscreenNG
 Version:        3.7.0
-Release:        2
+Release:        3
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
@@ -15,7 +15,6 @@ BuildRequires:  qmake-qt6
 BuildRequires:  qt6-qtbase-tools
 BuildRequires:  cmake(Qt6LinguistTools)
 BuildRequires:  cmake(Qt6Multimedia)
-#BuildRequires:  cmake(Qt6X11Extras)
 BuildRequires:  cmake(Qt6Core)
 BuildRequires:  cmake(Qt6DBus)
 BuildRequires:  cmake(Qt6Gui)
