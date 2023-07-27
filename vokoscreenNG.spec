@@ -2,7 +2,7 @@
 
 Name:           vokoscreenNG
 Version:        3.7.0
-Release:        3
+Release:        4
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
@@ -38,6 +38,8 @@ Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-ugly
 # Requires for Player x264
 Requires:       gstreamer1.0-libav
+# To run vokoscreenNG on Wayland session pipewire gstreamer is required.
+Requires:      gstreamer1.0-pipewire
 
 Provides:       vokoscreenng = %{version}
 
