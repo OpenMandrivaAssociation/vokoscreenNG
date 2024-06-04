@@ -1,8 +1,8 @@
-%define _empty_manifest_terminate_build 0
+%undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.0.0
-Release:        2
+Version:        4.1.0
+Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
