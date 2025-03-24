@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.4.7
+Version:        4.5.0
 Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
@@ -40,6 +40,8 @@ Requires:       gstreamer1.0-plugins-ugly
 Requires:       gstreamer1.0-libav
 # To run vokoscreenNG on Wayland session pipewire gstreamer is required.
 Requires:      gstreamer1.0-pipewire
+# Requires for more formats
+Requires:      gstreamer-plugins-rs
 
 Provides:       vokoscreenng = %{version}
 
