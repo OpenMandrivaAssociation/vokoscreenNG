@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.7.0
-Release:        2
+Version:        4.7.1
+Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
