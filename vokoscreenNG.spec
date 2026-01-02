@@ -9,6 +9,7 @@ License:        GPLv2
 URL:            https://github.com/vkohaupt/vokoscreenNG
 Source0:        https://github.com/vkohaupt/vokoscreenNG/archive/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:  make
 BuildRequires:  cmake
 BuildRequires:  intltool
 BuildRequires:  qmake-qt6
