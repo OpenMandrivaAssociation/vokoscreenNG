@@ -1,13 +1,15 @@
 %undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.10.0
+Version:        4.11.0
 Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
 URL:            https://github.com/vkohaupt/vokoscreenNG
 Source0:        https://github.com/vkohaupt/vokoscreenNG/archive/%{version}/%{name}-%{version}.tar.gz
+# 4.11.0 replaced NULL with nullptr in this C file. nullptr is C++ only.
+Patch0:         vokoscreenNG-4.11.0-c-nullptr.patch
 
 BuildRequires:  make
 BuildRequires:  cmake
@@ -23,6 +25,9 @@ BuildRequires:  cmake(Qt6Multimedia)
 BuildRequires:  cmake(Qt6Network)
 BuildRequires:  cmake(Qt6Test)
 BuildRequires:  cmake(Qt6Widgets)
+BuildRequires:  cmake(Qt6WebChannel)
+BuildRequires:  cmake(Qt6WebSockets)
+BuildRequires:  cmake(Qt6WebEngineWidgets)
 BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gstreamer-video-1.0)
 BuildRequires:  pkgconfig(libpulse)
