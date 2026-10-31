@@ -1,15 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.11.0
+Version:        4.11.1
 Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
 License:        GPLv2
 URL:            https://github.com/vkohaupt/vokoscreenNG
 Source0:        https://github.com/vkohaupt/vokoscreenNG/archive/%{version}/%{name}-%{version}.tar.gz
-# 4.11.0 replaced NULL with nullptr in this C file. nullptr is C++ only.
-Patch0:         vokoscreenNG-4.11.0-c-nullptr.patch
 
 BuildRequires:  make
 BuildRequires:  cmake
@@ -30,7 +28,9 @@ BuildRequires:  cmake(Qt6WebSockets)
 BuildRequires:  cmake(Qt6WebEngineWidgets)
 BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gstreamer-video-1.0)
-BuildRequires:  pkgconfig(libpulse)
+BuildRequires:  pkgconfig(gstreamer-wayland-1.0)
+BuildRequires:  pkgconfig(gstreamer-pbutils-1.0)
+BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(x11)
 
@@ -44,7 +44,7 @@ Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-ugly
 # Requires for Player x264
 Requires:       gstreamer1.0-libav
-# To run vokoscreenNG on Wayland session pipewire gstreamer is required.
+# X11 and Wayland audio both go through PipeWire.
 Requires:      gstreamer1.0-pipewire
 
 Provides:       vokoscreenng = %{version}
