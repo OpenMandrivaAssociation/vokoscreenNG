@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           vokoscreenNG
-Version:        4.11.1
+Version:        4.11.2
 Release:        1
 Summary:        Powerful screencast creator
 Group:          Video/Editors
