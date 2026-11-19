@@ -33,6 +33,8 @@ BuildRequires:  pkgconfig(gstreamer-pbutils-1.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(x11)
+# 4.11.2's Wayland magnifier includes LayerShellQt/Window.
+BuildRequires:  %mklibname LayerShellQtInterface -d
 
 # Required for vorbis and opus audio
 Requires:       gstreamer1.0-plugins-base
@@ -56,6 +58,8 @@ Other tools such as magnifying glass, countdown, timer and systray support will 
 
 %prep
 %autosetup -p1
+# Upstream links -L/usr/lib64. aarch64 keeps the library in %{_libdir}.
+sed -i 's|-L/usr/lib64|-L%{_libdir}|' src/vokoscreenNG.pro
 
 %build
 cd src/
